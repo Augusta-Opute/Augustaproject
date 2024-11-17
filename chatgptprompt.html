@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <style>
         body {
          text-align: center;
@@ -11,23 +13,77 @@
              font-family: Segoe UI;
              border-radius: 25px;
          }
-         input {
-             
+         .search-container {
+             position: relative;
+             display: flex;
+             align-items: center;
+             padding: 10px 15px;
+             border: 1px  ;
+             border-radius: 30px;
+             height: 30px;
+             width: 70%;
+             margin: 0 auto;
+             background-color: rgba(40, 40, 40, 0.055);
          }
-            
+             .search-container input {
+                 width: 100%;
+                 border: none;
+                 outline: none;
+                 background-color: transparent;
+                 font-size: 16px;
+                 font-family: 'Segoe UI';
+             }
+         
+            .search-container i {
+                margin-right: 10px;
+            }
+            div {
+              padding: 20px; 
+            }
+            button {
+                background-color: transparent;
+                font-family: 'Segoe UI';
+                border-radius: 25px;
+                height: 40px;
+                color: gray;
+                margin: 4px;
+                padding: 2px;
+                width: 15%;
+
+            }
+            .btn1 i {
+                color: green;
+                margin: 5px;
+    
+            }
+            .btn2 i{
+                color:rgba(255, 166, 0, 0.849);
+                margin: 5px;
+            }
+            .btn3 i {
+                color: goldenrod;
+                margin: 5px;
+            }
+            .btn4 i {
+                color: plum;
+                margin: 5px;
+            }
+
         </style>
     </head>
     <body>
         <label for="chatgpt"><b>What can I help you with?</b></label><br><br>
+        <div class="search-container">
+            <i class="fa-solid fa-paperclip"></i>
         <input type="search" id="chatgpt" name="chatgpt" placeholder="Message ChatGPT" size="80px"><br><br>
-    
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
     <div>
-        <input type="button" value="Create Image">
-        <input type="button" value="Analyze Images">
-        <input type="button" value="Summarize Text">
-        <input type="button" value="Code">
-        <input type="button" value="Help me write">
-        <input type="button" value="More">
+        <button class="btn1"><i class="fa-regular fa-image"></i>Create Image </button>
+        <button class="btn2"><i class="fa-solid fa-book"></i>Summarize text</button>
+        <button class="btn3"><i class="fa-regular fa-lightbulb"></i>Make a plan</button>
+        <button class="btn4"><i class="fa-solid fa-pencil"></i>Help me write</button>
+        <button>More</button>
     </div>
 </body>
 </html>
