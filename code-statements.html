@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code statements</title>
+</head>
+<body>
+  
+</body>
+<script>
+  //code statements using if else statements
+  
+  //code statement for eligibility to study in different institutions based on Jamb Score
+  JambScore = 120;
+  if (JambScore === 180  || JambScore === 200) {console.log('You can apply to study in a University');}
+   else if (JambScore === 160 || JambScore === 170){console.log('You can apply into a Polytechnic');} else if (JambScore === 150) {console.log ('Apply into a college of education');} else {console.log('You have to resit for the UTME exam next year');}
+
+//code statement for classification of different arthropod organisms
+legs = 10; wings = 2;
+
+if (legs === 6 && wings === 4 ){ alert ('This is an insect');
+} else if (legs === 8 && wings=== 0) {alert('This is an Arachnid');} 
+else if (legs >= 8 && wings === 0 ) {alert ('This is a myriapod');}
+else if (legs >= 10 && wings === 0) {alert ('This is a crustacean');}
+else { console.log ('The organism belongs to another phylum.');}
+
+
+//code statement for eligibility to vote for elections in Nigeria
+ Nationality ='American', age = 16 
+if (Nationality === 'Nigerian' && age >= 18) {console.log ('Candidate is eligible to vote.');}
+else if (Nationality === 'Nigerian' && age <= 17){console.log ('You wil soon become eligible.');}
+else {console.log('Candidate can not vote.');}
+
+//preferred place to spend the christmas based on two dice rolls
+die1 = 5, die2 = 2;
+if (die1 === 6 && die2 === 6 ) {console.log ('You will spend the christmas at the beach.');}
+else if (die1 === 6 && die2 <= 5) {console.log ('You will spend the christmas at your favorite restaurant.');
+}else {console.log ("You will spend the christmas at grandma's house.");}
+
+//for negating an entry that specifies a dozen
+  dozen = 12
+
+  if (!dozen === 12) {console.log ('your entry is valid.');
+  } else { console.log('your entry is invalid.');}
+
+  //for negating an entry of expectations of two variables that are true.
+  const lottery = true;
+  const dettyDecember = true;
+
+  if (!lottery || dettyDecember) {console.log('I will paint the town red.');
+  } else {console.log(" E go red.");}
+
+//switch statements
+//for eligibility to study in different institutions based on Jamb Score
+JambScore = 180;
+switch (JambScore) {
+  case 180 : console.log('You can apply to study in a University');
+
+    break;
+
+    case 200: console.log('You can apply to study in a University');
+
+    break;
+
+    case 160 : console.log('You can apply into a Polytechnic');
+
+    break;
+    case 170: console.log('You can apply into a Polytechnic');
+
+    break;
+     
+    case 150: console.log ('Apply into a college of education');
+
+    break;
+
+  default: {console.log('You have to resit for the UTME exam next year');}
+    break;
+}
+
+
+//for shopping options
+const item = 'water'
+
+switch (item) {
+  case 'groundnutOil': console.log ('purchase it.');
+    
+    break;
+
+    case 'vegetableOil': console.log ('buy it.');
+
+    break;
+
+  default:console.log('purchase palmoil instead');
+    break;
+}
+ 
+ //clothing options for a ceremony
+  clothes = 'linen'
+  switch (clothes) {
+    case 'ankara': console.log('ideal for low profile ceremonies');
+      
+      break;
+
+      case 'lace': console.log('ideal for high profile ceremonies');
+      
+      break;
+  
+    default: console.log('a cloth sewn from a plain fabric is ideal.');
+      break;
+      }
+      //different payment options for different student categories
+      student = 'alumni'
+      switch (student) {
+        case 'undergrad': console.log ('undergraduates to pay #5000');
+          
+          break;
+
+          case 'pg': console.log ('postgraduates to pay #15000');
+
+          break;
+      
+        default: console.log ('others are required to pay #10000');
+          break;
+          }
+
+          //code statements for 'for loop'
+          //to run the code 'Hello Dora' 10 times
+          for (i= 0; i < 10; i++) {
+            console.log(i + ":Hello Dora");
+          }
+          //to run the code javascript is amazing
+          for (i= 1; i < 20; i++) {
+            console.log(i + ":javascript is amazing");
+          }
+          //for loop for an array containing strings
+          const fruits = ['apple', 'mango','lemon' ];
+          for (let i = 0 ; i < fruits.length; i++) { console.log ('it is a fruity day')}
+
+          //to get total of an array of numbers
+          const number = [2,4,6,8,10];
+          let total = 0;
+
+          for (let i = 0; i < number.length; i++) {
+            const sum = number[i];
+            total += sum; 
+          }
+          console.log (total);
+
+          
+          
+      
+</script>
+</html>
